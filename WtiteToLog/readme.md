@@ -13,7 +13,8 @@ This script writes the current date and time to a log file (`log.txt`) every 7 s
 ## Usage
 
 Make executable and run:
-
+chmod +x WritetoLog.sh
+./WritetoLog.sh
 
 ---
 
