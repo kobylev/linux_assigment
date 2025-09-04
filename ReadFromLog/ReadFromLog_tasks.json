@@ -1,0 +1,35 @@
+{
+    "script": "ReadFromLog.sh",
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Set up log file path variable",
+            "description": "Define the path for the log file as '../log.txt' in the script."
+        },
+        {
+            "id": 2,
+            "title": "Check if log file exists",
+            "description": "Display notification if the log file is missing."
+        },
+        {
+            "id": 3,
+            "title": "Implement safe reading function",
+            "description": "Use 'flock' shared lock to safely read the last line from the log file."
+        },
+        {
+            "id": 4,
+            "title": "Display last log line",
+            "description": "Print 'Last line in the log:' followed by the last line read from the file."
+        },
+        {
+            "id": 5,
+            "title": "Implement main loop",
+            "description": "Run the read operation every 10 seconds indefinitely."
+        },
+        {
+            "id": 6,
+            "title": "Make script executable and test",
+            "description": "Set proper permissions and verify reading behavior and locking."
+        }
+    ]
+}

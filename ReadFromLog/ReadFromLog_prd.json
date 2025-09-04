@@ -1,0 +1,27 @@
+{
+    "product": "ReadFromLog Script",
+    "version": "1.0",
+    "description": "A bash script that reads the last line from a log file every 10 seconds and displays it.",
+    "features": [
+        {
+            "name": "Read Last Log Entry",
+            "description": "Reads and displays the most recent timestamp from '../log.txt' every 10 seconds."
+        },
+        {
+            "name": "File Locking",
+            "description": "Uses file locking to safely read from the log file only when it is not locked by the writer."
+        },
+        {
+            "name": "Graceful Handling",
+            "description": "Displays notification if '../log.txt' does not exist yet."
+        }
+    ],
+    "operating_environment": "Unix-like shell with bash and flock",
+    "runtime_requirements": [
+        "Bash shell",
+        "flock utility",
+        "Read permissions on '../log.txt' file"
+    ],
+    "execution": "Runs indefinitely until manually stopped",
+    "output": "Displays the last line of '../log.txt' to the console"
+}

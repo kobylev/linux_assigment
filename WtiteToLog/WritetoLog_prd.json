@@ -1,0 +1,28 @@
+{
+    "product": "WritetoLog Script",
+    "version": "1.0",
+    "description": "A bash script that writes the current date and time to a log file every 7 seconds with progress display.",
+    "features": [
+        {
+            "name": "Write Timestamp",
+            "description": "Writes current date and time to '../log.txt' every 7 seconds.",
+            "format": "HH:mm:ss dd/MM/yyyy"
+        },
+        {
+            "name": "Progress Display",
+            "description": "Shows 'Write to Log' with accumulating dots (up to six) on the display to indicate activity."
+        },
+        {
+            "name": "File Locking",
+            "description": "Uses file locking to prevent simultaneous write/read conflicts on '../log.txt'."
+        }
+    ],
+    "operating_environment": "Unix-like shell with bash and flock",
+    "runtime_requirements": [
+        "Bash shell",
+        "flock utility",
+        "Write permissions on working directory"
+    ],
+    "execution": "Runs indefinitely until manually stopped",
+    "output": "'../log.txt' file with appended timestamps"
+}
