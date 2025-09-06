@@ -1,7 +1,7 @@
 # Task Breakdown - Assignment 2
 
 1. Write the `WriteToLog.sh` script to append the current time to the log file every 10 seconds in an infinite loop.
-2. Write the `ReadGromLog.sh` script to read and print the last line from the log file every 7 seconds in an infinite loop.
+2. Write the `ReadFromLog.sh` script to read and print the last line from the log file every 7 seconds in an infinite loop.
 3. Set executable permissions on the scripts using `chmod`.
 4. Test running the scripts in separate terminal windows.
 5. Document how to run the scripts as background jobs and how to properly stop them.
